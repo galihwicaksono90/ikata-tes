@@ -1,0 +1,10 @@
+query GetSambutanKetua {
+  getSambutanKetua {
+    photoPath
+    fullName
+    period
+    classYear
+    description
+    content
+  }
+}

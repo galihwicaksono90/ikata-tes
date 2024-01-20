@@ -1,0 +1,9 @@
+mutation SentKontakKami($kontakKamiInput: KontakKamiInputType!) {
+  sentKontakKami(kontakKamiInput: $kontakKamiInput) {
+    id
+    name
+    email
+    phone
+    message
+  }
+}

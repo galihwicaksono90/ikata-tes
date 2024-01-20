@@ -1,0 +1,101 @@
+query GetVacancies($params: ParamsInputType) {
+  getVacancies(params: $params) {
+    data {
+      id
+      companyLogoPath
+      companyName
+      amount
+      publishedDate
+      companyCity
+    }
+    meta {
+      count
+      totalCount
+    }
+  }
+}
+
+query GetVacancyDetail($id: String!) {
+  getVacancyDetail(id: $id) {
+    id
+    companyLogoPath
+    companyName
+    companyEmail
+    companyCity
+    publishedDate
+    expiredDate
+    content
+    amount
+    notes
+    status
+    rules
+  }
+}
+
+query GetScholarships($params: ParamsInputType!) {
+  getScholarships(params: $params) {
+    data {
+      id
+      companyLogoPath
+      companyName
+      amount
+      publishedDate
+      companyCity
+    }
+    meta {
+      count
+      totalCount
+    }
+  }
+}
+
+query GetScholarshipDetail($id: String!) {
+  getScholarshipDetail(id: $id) {
+    id
+    companyLogoPath
+    companyName
+    companyEmail
+    companyCity
+    publishedDate
+    expiredDate
+    content
+    amount
+    notes
+    status
+    rules
+  }
+}
+
+query GetFinalProjects($params: ParamsInputType!) {
+  getFinalProjects(params: $params) {
+    data {
+      id
+      companyLogoPath
+      companyName
+      amount
+      publishedDate
+      companyCity
+    }
+    meta {
+      count
+      totalCount
+    }
+  }
+}
+
+query GetFinalProjectDetail($id: String!) {
+  getFinalProjectDetail(id: $id) {
+    id
+    companyLogoPath
+    companyName
+    companyEmail
+    companyCity
+    publishedDate
+    expiredDate
+    content
+    amount
+    notes
+    status
+    rules
+  }
+}

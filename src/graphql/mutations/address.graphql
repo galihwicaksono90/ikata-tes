@@ -1,0 +1,7 @@
+mutation SetAddress($ProfileAlamatInput: ProfileAlamatInputType) {
+  ProfileAlamatMutation(ProfileAlamatInput: $ProfileAlamatInput) {
+    alamat
+    fullName
+    nama_negara
+  }
+}

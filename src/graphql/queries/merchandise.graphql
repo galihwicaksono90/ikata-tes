@@ -1,0 +1,73 @@
+query GetMerchandises($params: ParamsInputType) {
+  getMerchandises(params: $params) {
+    data {
+      id
+      name
+      price
+      description
+      photos {
+        thumbnailPath
+      }
+    }
+    meta {
+      totalCount
+      count
+    }
+  }
+}
+
+query GetMerchandiseDetail($id: String!) {
+  getMerchandiseDetail(id: $id) {
+    id
+    name
+    price
+    publishedDate
+    description
+    photos {
+      thumbnailPath
+    }
+    stock
+    sku
+    size
+    weight
+    status
+    category
+    merchandisecategory {
+      name
+    }
+  }
+}
+
+query GetMerchandiseContact {
+  getWhatsappMerchandise {
+    nomor
+  }
+}
+
+query GetMerchandiseCategories($params: ParamsInputType) {
+  getMerchandiseCategory(params: $params) {
+    data {
+      name
+      id
+    }
+  }
+}
+
+query GetMerchandiseAdvance($params: ParamsAdvanceInputType) {
+  getMerchandiseAdvance(params: $params) {
+    data {
+      id
+      name
+      price
+      description
+      status
+      photos {
+        thumbnailPath
+      }
+    }
+    meta {
+      count
+      totalCount
+    }
+  }
+}

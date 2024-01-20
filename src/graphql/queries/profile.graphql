@@ -1,0 +1,78 @@
+query GetProfile {
+  getProfile {
+    id
+    nickName
+    isVerified
+    photoPath
+  }
+}
+
+query GetProfileDetail {
+  getProfile {
+    fullName
+    nickName
+    prefixTitle
+    suffixTitle
+    kewarganegaraan
+    email
+    phone
+    gender
+    classYear
+    isVerified
+    tempat_lahir
+    tanggal_lahir
+    jenis_pekerjaan
+    jabatan_pekerjaan
+    nama_instansi_perusahaan
+    photoPath
+    alamat_instansi_perusahaan
+    subscription_2022_paid
+    subscription_2023_paid
+    subscription_2024_paid
+    subscription_2025_paid
+    kode_provinsi
+    kode_kabupaten
+    kode_desa
+    alamat
+    kode_pos
+    nim
+  }
+}
+
+query GetBiodata {
+  getProfile {
+    fullName
+    nickName
+    nim
+    classYear
+    kewarganegaraan
+    tempat_lahir
+    tanggal_lahir
+    email
+    prefixTitle
+    suffixTitle
+    phone
+    gender
+  }
+}
+
+query GetAddress {
+  getProfile {
+    kode_provinsi
+    kode_kabupaten
+    kode_kecamatan
+    kode_desa
+    kode_pos
+    alamat
+    nama_negara
+  }
+}
+
+query GetOccupation {
+  getProfile {
+    jenis_pekerjaan
+    nama_instansi_perusahaan
+    jabatan_pekerjaan
+    alamat_instansi_perusahaan
+  }
+}

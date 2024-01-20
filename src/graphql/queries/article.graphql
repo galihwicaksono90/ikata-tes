@@ -1,0 +1,27 @@
+query GetArticles($params: ParamsInputType) {
+  getArticles(params: $params) {
+    data {
+      id
+      title
+      description
+      thumbnailPath
+      publishedDate
+      category
+    }
+    meta {
+      count
+      totalCount
+    }
+  }
+}
+
+query GetArticleDetail($id: String!) {
+  getArticleDetail(id: $id) {
+    id
+    title
+    publishedDate
+    content
+    author
+    rules
+  }
+}

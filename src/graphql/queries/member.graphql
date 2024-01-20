@@ -1,0 +1,116 @@
+query GetDewanPengawas($params: ParamsInputType) {
+  getDewanPengawas(params: $params) {
+    data {
+      id
+      title
+      fullName
+      email
+      classYear
+      photoPath
+      jabatan {
+        id
+        name
+      }
+    }
+  }
+}
+
+query GetBidang($params: ParamsInputType) {
+  getBidang(params: $params) {
+    data {
+      id
+      name
+      urutan
+    }
+  }
+}
+
+query GetWilayah($params: ParamsInputType) {
+  getWilayah(params: $params) {
+    data {
+      id
+      name
+    }
+  }
+}
+
+query GetWilayahDetail($id: String!) {
+  getWilayahDetail(id: $id) {
+    id
+    name
+    koordinator {
+      id
+      fullName
+      photoPath
+      email
+      classYear
+      title
+      jabatan {
+        id
+        name
+      }
+    }
+  }
+}
+
+query GetBidangDetail($id: String!) {
+  getBidangDetail(id: $id) {
+    id
+    name
+    pengurus {
+      id
+      fullName
+      photoPath
+      email
+      title
+      classYear
+      jabatan {
+        id
+        name
+      }
+    }
+    subBidang {
+      id
+      name
+      pengurus {
+        id
+        fullName
+        photoPath
+        email
+        title
+        classYear
+        jabatan {
+          id
+          name
+        }
+      }
+    }
+  }
+}
+
+query GetKoordinatorAngkatan($params: RangeYearInputType) {
+  getKoordinatorAngkatan(params: $params) {
+    id
+    fullName
+    email
+    classYear
+    photoPath
+  }
+}
+
+query GetPengurusHarian($params: ParamsInputType) {
+  getPengurusHarian(params: $params) {
+    data {
+      id
+      fullName
+      email
+      classYear
+      photoPath
+      title
+      jabatan {
+        id
+        name
+      }
+    }
+  }
+}

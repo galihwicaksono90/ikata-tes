@@ -1,0 +1,25 @@
+query GetActivities($params: ParamsInputType) {
+  getActivities(params: $params) {
+    data {
+      id
+      title
+      publishedDate
+      description
+      thumbnailPath
+    }
+    meta {
+      count
+      totalCount
+    }
+  }
+}
+
+query GetActivityDetail($id: String!) {
+  getActivityDetail(id: $id) {
+    id
+    title
+    publishedDate
+    content
+    rules
+  }
+}

@@ -1,0 +1,31 @@
+query GetAlumniBusinesses($params: ParamsInputType) {
+  getAlumniBusinesses(params: $params) {
+    data {
+      id
+      title
+      thumbnailPath
+      publishedDate
+      ownerName
+      provinsi {
+        nama_provinsi
+      }
+    }
+    meta {
+      totalCount
+      count
+    }
+  }
+}
+
+query GetAlumniBusinessDetail($id: String!) {
+  getAlumniBusinessDetail(id: $id) {
+    id
+    title
+    content
+    alamat
+    kontak_whatsapp
+    kontak_email
+    ownerName
+    ownerClassYear
+  }
+}

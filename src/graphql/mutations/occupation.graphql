@@ -1,0 +1,8 @@
+mutation SetOccupation($ProfilePekerjaanInput: ProfilePekerjaanInputType) {
+  ProfilePekerjaanMutation(ProfilePekerjaanInput: $ProfilePekerjaanInput) {
+    alamat_instansi_perusahaan
+    jabatan_pekerjaan
+    jenis_pekerjaan
+    nama_instansi_perusahaan
+  }
+}

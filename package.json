@@ -1,0 +1,48 @@
+{
+  "name": "ikata",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start -p 2001",
+    "lint": "next lint",
+    "gen": "graphql-codegen -r dotenv/config --config codegen.yml"
+  },
+  "dependencies": {
+    "@fontsource/montserrat": "^4.5.11",
+    "@fontsource/playfair-display": "^4.5.10",
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/typescript": "^2.4.11",
+    "@graphql-codegen/typescript-operations": "^2.4.0",
+    "@graphql-codegen/typescript-rtk-query": "^2.2.12",
+    "@mantine/core": "^4.2.12",
+    "@mantine/dates": "^4.2.12",
+    "@mantine/hooks": "^4.2.12",
+    "@mantine/next": "^4.2.12",
+    "@mantine/notifications": "^4.2.12",
+    "@reduxjs/toolkit": "^1.9.7",
+    "@tabler/icons": "^1.68.0",
+    "browser-image-compression": "^2.0.0",
+    "dayjs": "^1.11.3",
+    "dotenv": "^16.0.1",
+    "embla-carousel-autoplay": "^6.2.0",
+    "embla-carousel-react": "^6.2.0",
+    "graphql": "^16.5.0",
+    "graphql-request": "^4.2.0",
+    "next": "12.1.5",
+    "next-redux-wrapper": "^7.0.5",
+    "react": "18.0.0",
+    "react-dom": "18.0.0",
+    "react-hook-form": "^7.31.1",
+    "react-redux": "^8.0.1",
+    "sharp": "^0.30.6"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.25",
+    "@types/react": "^18.0.6",
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5",
+    "typescript": "^4.6.3"
+  }
+}

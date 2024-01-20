@@ -1,0 +1,43 @@
+query GetProvinsi($params: ParamsInputType) {
+  getProvinsi(params: $params) {
+    data {
+      kode_provinsi
+      nama_provinsi
+    }
+  }
+}
+
+query GetKabupaten($params: ParamsInputType) {
+  getKabupaten(params: $params) {
+    data {
+      kode_kabupaten
+      nama_kabupaten
+    }
+  }
+}
+
+query GetKecamatan($params: ParamsInputType) {
+  getKecamatan(params: $params) {
+    data {
+      kode_kecamatan
+      nama_kecamatan
+    }
+  }
+}
+
+query GetDesa($params: ParamsInputType) {
+  getDesa(params: $params) {
+    data {
+      kode_desa
+      nama_desa
+    }
+  }
+}
+
+query GetNegara($params: ParamsInputType) {
+  getNegara(params: $params) {
+    data {
+      name
+    }
+  }
+}

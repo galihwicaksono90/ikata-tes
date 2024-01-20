@@ -1,0 +1,31 @@
+query GetTentangKami {
+  getTentangKami {
+    photo
+    content
+  }
+}
+
+query GetTentangJurusan {
+  getTentangJurusan {
+    photo
+    content
+  }
+}
+
+query GetKetuaIkata($params: ParamsInputType) {
+  getKetuaIkata(params: $params) {
+    data {
+      id
+      fullName
+      description
+      photoPath
+      classYear
+      period
+      sort
+    }
+    meta {
+      count
+      totalCount
+    }
+  }
+}

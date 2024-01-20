@@ -1,0 +1,8 @@
+mutation SetBiodata($ProfileBiodataInput: ProfileBiodataInputType) {
+  ProfileBiodataMutation(ProfileBiodataInput: $ProfileBiodataInput) {
+    id
+    nickName
+    kewarganegaraan
+    tanggal_lahir
+  }
+}

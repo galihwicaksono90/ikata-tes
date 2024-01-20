@@ -1,0 +1,12 @@
+query GetFooter {
+  getFooter {
+    appName
+    name
+    logo
+    address
+    youtubeUrl
+    instagramUrl
+    emailAddress
+    phoneNumber
+  }
+}

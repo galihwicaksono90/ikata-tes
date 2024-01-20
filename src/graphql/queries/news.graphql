@@ -1,0 +1,27 @@
+query GetNews($params: ParamsInputType) {
+  getNews(params: $params) {
+    data {
+      id
+      title
+      tags
+      thumbnailPath
+      publishedDate
+    }
+    meta {
+      count
+      totalCount
+    }
+  }
+}
+
+query GetNewsDetail($id: String!) {
+  getNewsDetail(id: $id) {
+    id
+    title
+    tags
+    author
+    publishedDate
+    content
+    rules
+  }
+}
